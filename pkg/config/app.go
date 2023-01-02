@@ -1,4 +1,4 @@
-package config 
+package config
 
 import (
 	"github.com/jinzhu/gorm"
@@ -10,7 +10,8 @@ var (
 )
 
 func Connect(){
-	d, err := gorm.Open("mysql", "olumayor99:abc@123/simplerest?charset=utf8&parseTime=True&loc=Local")
+	// dsn := "user:pass@tcp(127.0.0.1:3306)/dbname?charset=utf8mb4&parseTime=True&loc=Local"
+	d, err := gorm.Open("mysql", "root:abc123doremi@tcp(127.0.0.1:3306)/simplerest?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		panic(err)
 	}
