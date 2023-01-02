@@ -1,4 +1,4 @@
-module github.com/olumayor99/Book-Store-API
+module github.com/olumayor99/book-store-api
 
 go 1.18
 
